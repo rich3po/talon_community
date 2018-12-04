@@ -19,6 +19,14 @@ def switch_app(m, name=None):
             time.sleep(0.25)
             break
 
+def switch_to_canary(m, name=None):
+    for app in ui.apps():
+        if app.bundle == 'com.google.Chrome.canary':
+            app.focus()
+            # TODO: replace sleep with a check to see when it is in foreground
+            time.sleep(0.25)
+            break
+
 def launch_app(m):
     name = str(m['switcher.launch'][0])
     path = launch.get(name)
@@ -31,13 +39,14 @@ ctx.keymap({
     'launch {switcher.launch}': launch_app,
     # custom switchers here
     "madam": lambda x: switch_app(x, "Atom"),
-    "fox chrome": lambda x: switch_app(x, "Google Chrome"),
-    "fox outlook": lambda x: switch_app(x, "Outlook"),
-    "fox slack": lambda x: switch_app(x, "Slack"),
-    "fox iterm": lambda x: switch_app(x, "iTerm2"),
-    "fox term": lambda x: switch_app(x, "iTerm2"),
-    "fox skype": lambda x: switch_app(x, "Skype for Business"),
-    "fox signal": lambda x: switch_app(x, "Signal"),
+    "focus chrome": lambda x: switch_app(x, "Google Chrome"),
+    "focus canary": lambda x: switch_to_canary(x),
+    "focus outlook": lambda x: switch_app(x, "Outlook"),
+    "focus slack": lambda x: switch_app(x, "Slack"),
+    "focus iterm": lambda x: switch_app(x, "iTerm2"),
+    "focus shell": lambda x: switch_app(x, "iTerm2"),
+    "focus skype": lambda x: switch_app(x, "Skype for Business"),
+    "focus signal": lambda x: switch_app(x, "Signal"),
 })
 
 def update_lists():

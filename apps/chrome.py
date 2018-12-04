@@ -7,8 +7,10 @@ from talon.voice import Context, Key, Str, press
 # It is recommended to use this script in tandem with Vimium, a Google Chrome plugin for controlling the browser via keyboard
 # https://vimium.github.io/
 
-context = Context("GoogleChrome", bundle="com.google.Chrome")
-
+# context = Context("GoogleChrome", bundle="com.google.Chrome")
+chrome_bundles = ['com.google.Chrome', 'com.google.Chrome.canary']
+context = Context('GoogleChrome', func=lambda app, win: any(
+    i in app.bundle for i in chrome_bundles))
 
 def open_focus_devtools(m):
     press("cmd-shift-c")
