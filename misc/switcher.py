@@ -2,6 +2,7 @@ from talon.voice import Word, Context, Key, Rep, Str, press
 from talon import ui
 import time
 import os
+import logging
 
 running = {}
 launch = {}
@@ -38,17 +39,19 @@ ctx.keymap({
     'focus {switcher.running}': switch_app,
     'launch {switcher.launch}': launch_app,
     # custom switchers here
-    "madam": lambda x: switch_app(x, "Atom"),
+    # "madam": lambda x: switch_app(x, "Atom"),
+    # "focus outlook": lambda x: switch_app(x, "Outlook"),
+    # "focus slack": lambda x: switch_app(x, "Slack"),
+    # "focus skype": lambda x: switch_app(x, "Skype for Business"),
+    # "focus signal": lambda x: switch_app(x, "Signal"),
+    # my custom
     "focus chrome": lambda x: switch_app(x, "Google Chrome"),
     "focus canary": lambda x: switch_to_canary(x),
-    "focus outlook": lambda x: switch_app(x, "Outlook"),
-    "focus slack": lambda x: switch_app(x, "Slack"),
+    "focus storm": lambda x: switch_app(x, "PhpStorm"),
     "focus iterm": lambda x: switch_app(x, "iTerm2"),
     "focus shell": lambda x: switch_app(x, "iTerm2"),
-    "focus skype": lambda x: switch_app(x, "Skype for Business"),
-    "focus signal": lambda x: switch_app(x, "Signal"),
 })
-
+2
 def update_lists():
     global running
     global launch

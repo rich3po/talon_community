@@ -13,8 +13,8 @@ keymap = {
     "channel next": Key("alt-down"),
     "([channel] unread next | goneck)": Key("alt-shift-down"),
     "[channel] info": Key("cmd-shift-i"),
-    "channel up": Key("alt-up"),
-    "channel down": Key("alt-down"),
+    "(channel | chan) up": Key("alt-up"),
+    "(channel | chan) down": Key("alt-down"),
     # Navigation
     "move focus": Key("ctrl-`"),
     "next section": Key("f6"),

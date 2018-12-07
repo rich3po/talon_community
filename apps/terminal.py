@@ -192,6 +192,11 @@ keymap = {
     "conda list": "conda list ",
     # tmux
     "tmux new session": "tmux ",
+
+    # CUSTOM
+    "cancel that": Key("ctrl-c"),
+    "search": Key("ctrl-r"),
+    "run tig status": Key("ts"),
 }
 
 for action in ('get', 'delete', 'describe'):
