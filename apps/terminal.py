@@ -27,6 +27,13 @@ def dash(m):
         press("-")
         press("-")
         Str("-".join(words))(None)
+    
+def finish_commit(m):
+    press('ctrl-x')
+    press('y')
+    press('enter')
+    press('ctrl-c')
+    Str('git push')
 
 KUBERNETES_PREFIX = "(cube | cube control)"
 
@@ -199,6 +206,7 @@ keymap = {
     "cancel": Key("ctrl-c"),
     "search": Key("ctrl-r"),
     "run tig status": "ts",
+    'finish commit': finish_commit,
 }
 
 for action in ('get', 'delete', 'describe'):
