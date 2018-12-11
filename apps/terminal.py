@@ -194,9 +194,11 @@ keymap = {
     "tmux new session": "tmux ",
 
     # CUSTOM
-    "cancel that": Key("ctrl-c"),
+    "next tab": Key("cmd-right"),
+    "previous tab": Key("cmd-left"),
+    "cancel": Key("ctrl-c"),
     "search": Key("ctrl-r"),
-    "run tig status": Key("ts"),
+    "run tig status": "ts",
 }
 
 for action in ('get', 'delete', 'describe'):

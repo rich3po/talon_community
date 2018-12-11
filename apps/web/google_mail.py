@@ -10,5 +10,9 @@ ctx.keymap(
     {
         "inbox": Key("g i"),
         "starred": Key("g s"),
+        "open": Key("o"),
+        "archive": Key("e"),
+        "newer": Key("k"),
+        "older": Key("j"),
     }
 )
