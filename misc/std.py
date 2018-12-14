@@ -274,6 +274,6 @@ ctx.keymap(
         "put computer to sleep": lambda m: os.system("pmset sleepnow"),
 
         # CUSTOM
-        "heya": "Hey",
+        "heya": "Hey ",
     }
 )

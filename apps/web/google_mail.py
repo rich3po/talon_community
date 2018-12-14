@@ -17,5 +17,7 @@ ctx.keymap(
         "archive": Key("e"),
         "newer": Key("k"),
         "older": Key("j"),
+        "compose": Key("c"),
+        "mark unread": Key("shift-u"),
     }
 )

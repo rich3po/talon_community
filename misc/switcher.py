@@ -20,7 +20,7 @@ def switch_app(m, name=None):
             time.sleep(0.25)
             break
 
-def switch_to_canary(m, name=None):
+def switch_to_canary():
     for app in ui.apps():
         if app.bundle == 'com.google.Chrome.canary':
             app.focus()
@@ -28,15 +28,17 @@ def switch_to_canary(m, name=None):
             time.sleep(0.25)
             break
 
-def launch_app(m):
-    name = str(m['switcher.launch'][0])
+def launch_app(m, name=None):
+    if name is None:
+        name = str(m['switcher.running'][0])
+        
     path = launch.get(name)
     if path:
         ui.launch(path=path)
 
 ctx = Context('switcher')
 ctx.keymap({
-    'focus {switcher.running}': switch_app,
+    'oh {switcher.running}': switch_app,
     'launch {switcher.launch}': launch_app,
     # custom switchers here
     # "madam": lambda x: switch_app(x, "Atom"),
@@ -45,11 +47,11 @@ ctx.keymap({
     # "focus skype": lambda x: switch_app(x, "Skype for Business"),
     # "focus signal": lambda x: switch_app(x, "Signal"),
     # my custom
-    "focus chrome": lambda x: switch_app(x, "Google Chrome"),
-    "focus canary": lambda x: switch_to_canary(x),
-    "focus storm": lambda x: switch_app(x, "PhpStorm"),
-    "focus iterm": lambda x: switch_app(x, "iTerm2"),
-    "focus shell": lambda x: switch_app(x, "iTerm2"),
+    "oh chrome": lambda x: switch_app(x, "Google Chrome"),
+    "oh canary": lambda x: switch_to_canary(),
+    "oh storm": lambda x: switch_app(x, "PhpStorm"),
+    "launch storm": lambda x: launch_app(x, "PhpStorm"),
+    "oh shell": lambda x: switch_app(x, "iTerm2"),
 })
 2
 def update_lists():

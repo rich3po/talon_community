@@ -1,5 +1,6 @@
 from talon.voice import Word, Key, Context, Str, press
 import string
+import time
 
 from ..utils import numerals, parse_words, text
 
@@ -30,10 +31,12 @@ def dash(m):
     
 def finish_commit(m):
     press('ctrl-x')
+    time.sleep(0.25)
     press('y')
+    time.sleep(0.25)
     press('enter')
+    time.sleep(0.25)
     press('ctrl-c')
-    Str('git push')
 
 KUBERNETES_PREFIX = "(cube | cube control)"
 
