@@ -2,7 +2,7 @@ from talon.voice import Word, Key, Context, Str, press
 import string
 import time
 
-from ..utils import numerals, parse_words, text
+from ..utils import numerals, parse_words, text, parse_words_as_integer
 
 # TODO: move application specific commands into their own files: git, apt-get, etc
 
@@ -38,6 +38,11 @@ def finish_commit(m):
     time.sleep(0.25)
     press('ctrl-c')
 
+def jump_tab(m):
+    tab_number = parse_words_as_integer(m._words[1:])
+    if tab_number != None and tab_number > 0 and tab_number < 9:
+        press("cmd-%s" % tab_number)
+
 KUBERNETES_PREFIX = "(cube | cube control)"
 
 keymap = {
@@ -63,7 +68,7 @@ keymap = {
         Key("left"),
         text,
     ],
-    "(ls | run ellis | run alice)": "ls\n",
+    "(ls | run ellis | run alice)": "ls -a\n",
     "(la | run la)": "ls -la\n",
     "durrup": "cd ..; ls\n",
     "go back": "cd -\n",
@@ -207,9 +212,17 @@ keymap = {
     "next tab": Key("cmd-right"),
     "previous tab": Key("cmd-left"),
     "cancel": Key("ctrl-c"),
+    "exit": Key("ctrl-x"),
     "search": Key("ctrl-r"),
-    "run tig status": "ts",
+    # "go to start": Key("fn-left"),
+    "tigger": "ts",
+    "directory": [
+        "pwd",
+        Key("enter")
+    ],
     'finish commit': finish_commit,
+    "tab (1 | 2 | 3 | 4 | 5 | 6 | 7 | 8)": jump_tab,
+    "dee drush": "ddrush ",
 }
 
 for action in ('get', 'delete', 'describe'):

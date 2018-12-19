@@ -149,6 +149,8 @@ ctx.keymap(
         "run get show": "git show ",
         "run get status": "git status ",
         "run get tag": "git tag ",
+        "run get clear": "git clr ",
+        "run get remote": "git remote ",
         "run (them | vim)": "vim ",
         "run L S": "ls\n",
         "dot pie": ".py",
@@ -274,6 +276,6 @@ ctx.keymap(
         "put computer to sleep": lambda m: os.system("pmset sleepnow"),
 
         # CUSTOM
-        "heya": "Hey ",
+        "heya": "Hey,",
     }
 )
