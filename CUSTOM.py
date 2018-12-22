@@ -3,6 +3,7 @@ import logging
 
 ctx = Context('CUSTOM')
 ctx.keymap({
+    "flip": Key("cmd-tab"),
     "copy": Key("cmd-c"),
     "cut": Key("cmd-x"),
     "paste": Key("cmd-v"),

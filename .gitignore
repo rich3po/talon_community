@@ -108,3 +108,6 @@ venv.bak/
 
 # jetbrains
 .idea/
+
+# Mac OS
+.DS_Store
