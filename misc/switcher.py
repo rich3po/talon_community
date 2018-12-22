@@ -52,8 +52,9 @@ ctx.keymap({
     "oh storm": lambda x: switch_app(x, "PhpStorm"),
     "launch storm": lambda x: launch_app(x, "PhpStorm"),
     "oh shell": lambda x: switch_app(x, "iTerm2"),
+    "oh sublime": lambda x: switch_app(x, "Sublime Text"),
 })
-2
+
 def update_lists():
     global running
     global launch
