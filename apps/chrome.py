@@ -109,5 +109,8 @@ context.keymap(
         "mendeley": Key("cmd-shift-m"),
         # TODO: this should probably bem specific to the page
         "submit": Key("cmd-enter"),
+
+        # Vimium
+        "show links": Key("shift-f"),
     }
 )

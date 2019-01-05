@@ -50,7 +50,7 @@ keymap = {
     # some habits die hard
     "troll char": Key("ctrl-c"),
     "reverse": Key("ctrl-r"),
-    "cd": ["cd ; ls", Key("left"), Key("left"), Key("left"), Key("left")],
+    "cd": ["cd ; ll", Key("left"), Key("left"), Key("left"), Key("left")],
     "cd wild": [
         "cd **; ls",
         Key("left"),
@@ -68,8 +68,8 @@ keymap = {
         Key("left"),
         text,
     ],
-    "(ls | run ellis | run alice)": "ls -a\n",
-    "(la | run la)": "ls -la\n",
+    "(ls | run ellis | run alice)": "ll\n",
+    # "(la | run la)": "ls -la\n",
     "durrup": "cd ..; ls\n",
     "go back": "cd -\n",
     "dash <dgndictation> [over]": dash,
@@ -216,13 +216,11 @@ keymap = {
     "search": Key("ctrl-r"),
     # "go to start": Key("fn-left"),
     "tigger": "ts",
-    "directory": [
-        "pwd",
-        Key("enter")
-    ],
+    "where am i": "pwd\n",
     'finish commit': finish_commit,
     "tab (1 | 2 | 3 | 4 | 5 | 6 | 7 | 8)": jump_tab,
     "dee drush": "ddrush ",
+    "arty": "artisan ",
 }
 
 for action in ('get', 'delete', 'describe'):

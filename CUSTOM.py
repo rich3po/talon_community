@@ -14,4 +14,7 @@ ctx.keymap({
         Key("cmd-shift-right"),
         Key("cmd-c"),
     ],
+    "my email address": "rich.3po@gmail.com",
+    "el bracket": "(",
+    "ah bracket": ")",
 })

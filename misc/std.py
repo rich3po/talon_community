@@ -174,7 +174,7 @@ ctx.keymap(
         "tip double": "double ",
         "args": ["()", Key("left")],
         "index": ["[]", Key("left")],
-        "block": [" {}", Key("left enter enter up tab")],
+        # "block": [" {}", Key("left enter enter up tab")],
         "empty array": "[]",
         "empty dict": "{}",
         "state (def | deaf | deft)": "def ",

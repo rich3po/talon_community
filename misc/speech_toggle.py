@@ -11,7 +11,7 @@ sleepy.keymap({
     'talon wake': lambda m: speech.set_enabled(True),
 
     'dragon mode': [lambda m: speech.set_enabled(False), lambda m: engine.mimic('wake up'.split())],
-    'talon mode': [lambda m: speech.set_enabled(True), lambda m: engine.mimic('go to sleep'.split())],
+    'tal mode': [lambda m: speech.set_enabled(True), lambda m: engine.mimic('go to sleep'.split())],
 
     'snore': [lambda m: speech.set_enabled(False), lambda m: engine.mimic('go to sleep'.split())],
 })
