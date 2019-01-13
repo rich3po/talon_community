@@ -3,7 +3,7 @@ import string
 
 # alpha_alt = 'air bat cap drum each fine gust harp sit jury crunch look made near odd pit quench red sun trap urge vest whale plex yank zip'.split()
 # Phonetic version
-alpha_alt = 'alpha bravo charlie delta echo foxtrot golf hotel india juliet kilo lima mike november oscar papa quebec romeo sierra tango uni victor whiskey x-ray yankee zulu'.split()
+alpha_alt = 'alpha bravo charlie del echo foxtrot golf hotel india juliet kilo lima mike november oscar papa quebec romeo sierra tango uni victor whiskey x-ray yankee zulu'.split()
 
 f_keys = {f'F {i}': f'f{i}' for i in range(1, 13)}
 # arrows are separated because 'up' has a high false positive rate
@@ -13,8 +13,6 @@ simple_keys = [
     'home', 'pageup', 'pagedown', 'end',
 ]
 alternate_keys = {
-
-
     'backspace': 'backspace',
     'delete': 'backspace',
     'forward delete': 'delete',

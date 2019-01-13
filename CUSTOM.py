@@ -4,6 +4,8 @@ import logging
 ctx = Context('CUSTOM')
 ctx.keymap({
     "flip": Key("cmd-tab"),
+    "switch window": Key("cmd-`"),
+    "switch tab": Key("ctrl-tab"),
     "copy": Key("cmd-c"),
     "cut": Key("cmd-x"),
     "paste": Key("cmd-v"),
@@ -17,4 +19,6 @@ ctx.keymap({
     "my email address": "rich.3po@gmail.com",
     "el bracket": "(",
     "ah bracket": ")",
+    "php": "php",
+    "symphony": "symfony ",
 })

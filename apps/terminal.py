@@ -147,7 +147,8 @@ keymap = {
     "jet stash apply": "git stash apply ",
     "jet status": "git status ",
     # Tools
-    "(grep | grip)": ["grep  .", Key("left left")],
+    # "(grep | grip)": ["grep  .", Key("left left")],
+    "(grep | grip)": "grep  ",
     "gripper": ["grep -r  .", Key("left left")],
     "pee socks": "ps aux ",
     "vi": "vi ",
@@ -215,12 +216,15 @@ keymap = {
     "exit": Key("ctrl-x"),
     "search": Key("ctrl-r"),
     # "go to start": Key("fn-left"),
-    "tigger": "ts",
+    "tigger": "tig status",
     "where am i": "pwd\n",
     'finish commit': finish_commit,
     "tab (1 | 2 | 3 | 4 | 5 | 6 | 7 | 8)": jump_tab,
     "dee drush": "ddrush ",
     "arty": "artisan ",
+    "vague": "vagrant ",
+    "nano": "nano ",
+    "run7": "sym ",
 }
 
 for action in ('get', 'delete', 'describe'):
