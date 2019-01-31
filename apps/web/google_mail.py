@@ -7,7 +7,7 @@ import logging
 
 ctx = Context(
     "google_mail",
-    func=lambda app, win: "- Gmail" in win.title or "- Edo Mail" in win.title
+    func=lambda app, win: "- Gmail" in win.title or "CarePlanner Mail" in win.title
 )
 ctx.keymap(
     {
@@ -19,5 +19,7 @@ ctx.keymap(
         "older": Key("j"),
         "compose": Key("c"),
         "mark unread": Key("shift-u"),
+        "end": Key("cmd-right"),
+        "start": Key("cmd-left"),
     }
 )

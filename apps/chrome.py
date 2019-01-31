@@ -86,7 +86,7 @@ context.keymap(
         "marco": Key("cmd-f"),
         # "next": Key("cmd-g"),
         # "(last | prevous)": Key("cmd-shift-g"),
-        "toggle dev tools": Key("cmd-alt-i"),
+        "dev tools": Key("cmd-alt-i"),
         "command menu": Key("cmd-shift-p"),
         "next panel": next_panel,
         "(last | prevous) panel": last_panel,

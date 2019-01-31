@@ -17,8 +17,12 @@ ctx.keymap({
         Key("cmd-c"),
     ],
     "personal email": "rich.3po@gmail.com",
+    "work email": "rich@care-planner.co.uk",
+    "lock screen": Key("cmd-ctrl-q"),
     "el bracket": "(",
     "ah bracket": ")",
     "php": "php",
     "symphony": "symfony ",
+    "dock sal": "docksal ",
+    "heya": "Hey",
 })

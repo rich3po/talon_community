@@ -7,7 +7,10 @@ ctx.keymap(
     {
         "go line": Key("cmd-l"),
         "drill": Key("cmd-b"),
-        "search all": Key("shift shift"),
+        "disable": Key("cmd-/"),
+        "debug code": Key("ctrl-l"),
+        "reformat code": Key("cmd-alt-l"),
+        "explore": Key("shift shift"),
         "(next tab | goneck)": Key("cmd-shift-]"),
         "((last | previous | preev) tab | gopreev)": Key("cmd-shift-["),
 
@@ -22,14 +25,16 @@ ctx.keymap(
         "extends": "extends ",
         "implements": "implements ",
         "function": "function ",
-        "create if": ["if () {", Key("enter"), Key("up")],
+        "create if": ["if () {", Key("enter"), Key("up"), Key("right"), Key("right")],
         "create for each": ["foreach () {", Key("enter"), Key("up"), Key("right"), Key("right"), Key("right"), Key("right"), Key("right")],
         "equals": " = ",
+        "equals arrow": " => ",
         "identical": " == ",
         "not identical": " !== ",
         "plus equals": " += ",
         "return": "return ",
         "null": "null",
+        "this": "this",
         # "var": (True, lambda i, word, _: word if i == 0 else word.capitalize()),
     }
 )

@@ -148,7 +148,7 @@ keymap = {
     "jet status": "git status ",
     # Tools
     # "(grep | grip)": ["grep  .", Key("left left")],
-    "(grep | grip)": "grep  ",
+    "(grep | grip)": " grep ",
     "gripper": ["grep -r  .", Key("left left")],
     "pee socks": "ps aux ",
     "vi": "vi ",
@@ -210,13 +210,14 @@ keymap = {
     "tmux new session": "tmux ",
 
     # CUSTOM
-    "next tab": Key("cmd-right"),
-    "previous tab": Key("cmd-left"),
+    "goneck": Key("cmd-right"),
+    "gopreev": Key("cmd-left"),
     "cancel": Key("ctrl-c"),
     "exit": Key("ctrl-x"),
     "search": Key("ctrl-r"),
     # "go to start": Key("fn-left"),
     "tigger": "tig status",
+    "commit": Key("shift-c"),
     "where am i": "pwd\n",
     'finish commit': finish_commit,
     "tab (1 | 2 | 3 | 4 | 5 | 6 | 7 | 8)": jump_tab,
@@ -225,6 +226,10 @@ keymap = {
     "vague": "vagrant ",
     "nano": "nano ",
     "run7": "sym ",
+    "brew": "brew ",
+    "brew casque": "brew cask ",
+    "finn": "fin ",
+    "drush": "fin drush ",
 }
 
 for action in ('get', 'delete', 'describe'):

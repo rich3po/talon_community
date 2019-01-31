@@ -54,6 +54,7 @@ ctx.keymap({
     "oh shell": lambda x: switch_app(x, "iTerm2"),
     "oh sublime": lambda x: switch_app(x, "Sublime Text"),
     "oh sequel": lambda x: switch_app(x, "Sequel Pro"),
+    "oh prefs": lambda x: switch_app(x, "System Preferences"),
 })
 
 def update_lists():
