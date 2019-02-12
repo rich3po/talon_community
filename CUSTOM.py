@@ -6,6 +6,7 @@ ctx.keymap({
     "flip": Key("cmd-tab"),
     "switch window": Key("cmd-`"),
     "switch tab": Key("ctrl-tab"),
+    "close app": Key("cmd-q"),
     "copy": Key("cmd-c"),
     "cut": Key("cmd-x"),
     "paste": Key("cmd-v"),
@@ -16,6 +17,14 @@ ctx.keymap({
         Key("cmd-shift-right"),
         Key("cmd-c"),
     ],
+    "clone": [
+        Key("cmd-left"),
+        Key("cmd-shift-right"),
+        Key("cmd-c"),
+        Key("cmd-right"),
+        Key("enter"),
+        Key("cmd-v"),
+    ],
     "personal email": "rich.3po@gmail.com",
     "work email": "rich@care-planner.co.uk",
     "lock screen": Key("cmd-ctrl-q"),
@@ -25,4 +34,5 @@ ctx.keymap({
     "symphony": "symfony ",
     "dock sal": "docksal ",
     "heya": "Hey",
+    "drupal": "drupal",
 })

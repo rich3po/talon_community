@@ -74,7 +74,7 @@ keymap = {
     "go back": "cd -\n",
     "dash <dgndictation> [over]": dash,
     "pseudo": "sudo ",
-    "shell C H mod": "chmod ",
+    # "shell C H mod": "chmod ",
     "shell clear": [Key("ctrl-c"), "clear\n"],
     "shell copy [<dgndictation>]": ["cp ", text],
     "shell copy (recursive | curse) [<dgndictation>]": ["cp -r", text],
@@ -219,6 +219,8 @@ keymap = {
     "tigger": "tig status",
     "commit": Key("shift-c"),
     "where am i": "pwd\n",
+    "C H mod": "chmod ",
+    "C H own": "chown ",
     'finish commit': finish_commit,
     "tab (1 | 2 | 3 | 4 | 5 | 6 | 7 | 8)": jump_tab,
     "dee drush": "ddrush ",
@@ -230,6 +232,7 @@ keymap = {
     "brew casque": "brew cask ",
     "finn": "fin ",
     "drush": "fin drush ",
+    "see see": "fin drush cc all",
 }
 
 for action in ('get', 'delete', 'describe'):

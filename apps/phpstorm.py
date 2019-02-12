@@ -8,7 +8,7 @@ ctx.keymap(
         "go line": Key("cmd-l"),
         "drill": Key("cmd-b"),
         "disable": Key("cmd-/"),
-        "debug code": Key("ctrl-l"),
+        "listen up": Key("ctrl-l"),
         "reformat code": Key("cmd-alt-l"),
         "explore": Key("shift shift"),
         "(next tab | goneck)": Key("cmd-shift-]"),
@@ -34,7 +34,7 @@ ctx.keymap(
         "plus equals": " += ",
         "return": "return ",
         "null": "null",
-        "this": "this",
+        # "this": "this",
         # "var": (True, lambda i, word, _: word if i == 0 else word.capitalize()),
     }
 )
