@@ -110,7 +110,7 @@ mapping = {
     "standard in": "stdin",
     "standard error": "stderr",
     "les": "less",
-    "doctor": "docker",
+    # "doctor": "docker",
     "communities": "kubernetes",
     "shall": "shell",
     "w get": "wget",
