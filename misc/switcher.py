@@ -56,6 +56,7 @@ ctx.keymap({
     "oh sequel": lambda x: switch_app(x, "Sequel Pro"),
     "oh prefs": lambda x: switch_app(x, "System Preferences"),
     "oh cal": lambda x: switch_app(x, "Calendar"),
+    "oh notes": lambda x: switch_app(x, "Evernote"),
 })
 
 def update_lists():

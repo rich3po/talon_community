@@ -151,6 +151,7 @@ ctx.keymap(
         "run get tag": "git tag ",
         "run get clear": "git clr ",
         "run get remote": "git remote ",
+        "run get stash": "git stash ",
         # "run (them | vim)": "vim ",
         "run L S": "ls\n",
         "dot pie": ".py",

@@ -71,7 +71,7 @@ keymap = {
     "brax-block": ["[", Key("enter")],
     "prex-block": ["(", Key("enter")],
     "angler": ["<>", Key("left")],
-    "brax": ["[]", Key("left")],
+    #"brax": ["[]", Key("left")],
     "coif": ['""', Key("left")],
     "glitch": ["``", Key("left")],
     "kirk": ["{}", Key("left")],

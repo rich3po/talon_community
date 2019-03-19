@@ -5,14 +5,17 @@ ctx = Context("phpstorm", bundle="com.jetbrains.PhpStorm")
 
 ctx.keymap(
     {
+        # shortcuts
         "go line": Key("cmd-l"),
         "drill": Key("cmd-b"),
         "disable": Key("cmd-/"),
-        "listen up": Key("ctrl-l"),
+        "debug": Key("ctrl-l"),
         "reformat code": Key("cmd-alt-l"),
         "explore": Key("shift shift"),
         "(next tab | goneck)": Key("cmd-shift-]"),
         "((last | previous | preev) tab | gopreev)": Key("cmd-shift-["),
+        "clone": Key("cmd-d"),
+        "grab": Key("alt-up"),
 
         # PHP
         "block": [" {", Key("enter")],
@@ -27,13 +30,15 @@ ctx.keymap(
         "function": "function ",
         "create if": ["if () {", Key("enter"), Key("up"), Key("right"), Key("right")],
         "create for each": ["foreach () {", Key("enter"), Key("up"), Key("right"), Key("right"), Key("right"), Key("right"), Key("right")],
-        "equals": " = ",
-        "equals arrow": " => ",
+        #"equals": " = ",
+        "rocket": " => ",
         "identical": " == ",
         "not identical": " !== ",
-        "plus equals": " += ",
+        "plus equals": " += ",  
+        "bracket": "[",  
         "return": "return ",
         "null": "null",
+        "onset": "unset",
         # "this": "this",
         # "var": (True, lambda i, word, _: word if i == 0 else word.capitalize()),
     }
