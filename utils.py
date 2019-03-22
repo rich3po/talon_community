@@ -123,6 +123,14 @@ mapping = {
 
     # python
     "if not none": "if not None",
+
+    # CUSTOM
+    "e-mailing": "emailing",
+    "e-mails": "emails",
+    "plug-in": "plugin",
+    "death": "dev",
+    "et cetera": "etc",
+    "cash": "cache",
 }
 mappings = collections.defaultdict(dict)
 for k, v in mapping.items():

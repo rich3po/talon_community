@@ -28,7 +28,8 @@ alternate_keys = {
 }
 symbols = {
     'back tick': '`', 'tick': '`',
-    'comma': ',',
+    # 'comma': ',',
+    ',': ',',
     'dot': '.', 'period': '.',
     'semi': ';', 'semicolon': ';',
     'quote': "'",

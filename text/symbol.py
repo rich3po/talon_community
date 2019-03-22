@@ -35,7 +35,7 @@ keymap = {
     "tick": "`",
     "triple tick": "```",
     "(dot | period)": ".",
-    "comma": ",",
+    # "comma": ",",
     "comshock": [",", Key("enter")],
     "swipe": ", ",
     "coalgap": ": ",
