@@ -233,6 +233,7 @@ keymap = {
     "finn": "fin ",
     "drush": "fin drush ",
     "see see": "fin drush cc all",
+    "composer": "fin composer ",
 }
 
 for action in ('get', 'delete', 'describe'):

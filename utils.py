@@ -131,6 +131,8 @@ mapping = {
     "death": "dev",
     "et cetera": "etc",
     "cash": "cache",
+    "sheikh": "shake",
+    "you eighty": "UAT",
 }
 mappings = collections.defaultdict(dict)
 for k, v in mapping.items():
