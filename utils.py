@@ -128,11 +128,15 @@ mapping = {
     "e-mailing": "emailing",
     "e-mails": "emails",
     "plug-in": "plugin",
+    "plug-ins": "plugins",
     "death": "dev",
     "et cetera": "etc",
     "cash": "cache",
     "sheikh": "shake",
     "you eighty": "UAT",
+    "dup": "up",
+    "okay": "ok",
+    "cheque": "check",
 }
 mappings = collections.defaultdict(dict)
 for k, v in mapping.items():
