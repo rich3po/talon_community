@@ -235,7 +235,7 @@ keymap = {
     "see see": "fin drush cc all",
     "up db": "fin drush updb -y",
     "run composer": "fin composer ",
-    "run get take": "tig\n",
+    "run tick": "tig\n",
 }
 
 for action in ('get', 'delete', 'describe'):

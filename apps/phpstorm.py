@@ -11,11 +11,12 @@ ctx.keymap(
         "disable": Key("cmd-/"),
         "debug": Key("ctrl-l"),
         "reformat code": Key("cmd-alt-l"),
-        "explore": Key("shift shift"),
+        "explore": [Key("shift"), Key("shift")],
         "(next tab | goneck)": Key("cmd-shift-]"),
         "((last | previous | preev) tab | gopreev)": Key("cmd-shift-["),
         "clone": Key("cmd-d"),
         "grab": Key("alt-up"),
+        "rename": Key("shift-f6"),
 
         # PHP
         "block": [" {", Key("enter")],

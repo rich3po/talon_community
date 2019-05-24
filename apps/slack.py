@@ -39,7 +39,7 @@ keymap = {
     "add line": Key("shift-enter"),
     "(slaw | slapper)": [Key("cmd-right"), Key("shift-enter")],
     "(react | reaction)": Key("cmd-shift-\\"),
-    "user": Key("@"),
+    # "user": Key("@"),
     "tag channel": Key("#"),
     "(insert command | commandify)": Key("cmd-shift-c"),
     "insert code": [
@@ -60,7 +60,7 @@ keymap = {
     "clear": [Key("cmd-a"), Key("backspace")],
     # Files and Snippets
     "upload": Key("cmd-u"),
-    "snippet": Key("cmd-shift-enter"),
+    "insert snippet": Key("cmd-shift-enter"),
     # Calls
     "([toggle] mute | unmute)": Key("m"),
     "([toggle] video)": Key("v"),

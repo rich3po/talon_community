@@ -59,7 +59,7 @@ keymap = {
     "swick": Key("cmd-tab"),
     "close tab": Key("cmd-w"),
     "close window": Key("cmd-shift-w"),
-    "mission": lambda m: system("open -a 'Mission Control'"),
+    # "mission": lambda m: system("open -a 'Mission Control'"),
     "show windows": Key("ctrl-down"),
     "curtail": Key("cmd-m"),
     "(next window | gibby)": Key("cmd-`"),

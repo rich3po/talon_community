@@ -137,6 +137,10 @@ mapping = {
     "dup": "up",
     "okay": "ok",
     "cheque": "check",
+    "cyprus": "cypress",
+    "altar": "alter",
+    "refractor": "refactor",
+    "webb took": "webhook",
 }
 mappings = collections.defaultdict(dict)
 for k, v in mapping.items():
