@@ -59,7 +59,7 @@ keymap = {
     "mark channel read": Key("esc"),
     "clear": [Key("cmd-a"), Key("backspace")],
     # Files and Snippets
-    "upload": Key("cmd-u"),
+    # "upload": Key("cmd-u"),
     "insert snippet": Key("cmd-shift-enter"),
     # Calls
     "([toggle] mute | unmute)": Key("m"),

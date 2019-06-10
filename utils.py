@@ -141,6 +141,8 @@ mapping = {
     "altar": "alter",
     "refractor": "refactor",
     "webb took": "webhook",
+    "mister": "mr",
+    "missus": "ms",
 }
 mappings = collections.defaultdict(dict)
 for k, v in mapping.items():
