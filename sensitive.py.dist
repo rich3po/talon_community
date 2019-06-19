@@ -1,0 +1,7 @@
+from talon.voice import Word, Context, Key, Rep, Str, press
+import logging
+
+ctx = Context('temp')
+ctx.keymap({
+    "phrase": 'secret',
+})
