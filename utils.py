@@ -44,7 +44,7 @@ mapping = {
     "repose": "repos",
     "ellis": "elif",
     "tubal": "tuple",
-    "deck": "deque",
+    # "deck": "deque",
     "log it's": "logits",
     "sell": "cell",
     "jeep you": "gpu",
@@ -112,7 +112,7 @@ mapping = {
     "les": "less",
     # "doctor": "docker",
     "communities": "kubernetes",
-    "shall": "shell",
+    # "shall": "shell",
     "w get": "wget",
     "backslash": "\\",
     "jet tub": "github",
@@ -132,6 +132,7 @@ mapping = {
     "death": "dev",
     "et cetera": "etc",
     "cash": "cache",
+    "cashing": "caching",
     "sheikh": "shake",
     "you eighty": "UAT",
     "dup": "up",
@@ -143,6 +144,11 @@ mapping = {
     "webb took": "webhook",
     "mister": "mr",
     "missus": "ms",
+    "aquila": "acquia",
+    "aq": "acquia",
+    "artefact": "artifact",
+    "webb": "web",
+    "deque": "deck",
 }
 mappings = collections.defaultdict(dict)
 for k, v in mapping.items():

@@ -26,7 +26,9 @@ ctx.keymap({
     #     Key("cmd-v"),
     # ],
     "personal email": "rich.3po@gmail.com",
-    "work email": "rich@care-planner.co.uk",
+    "personal phone": "07971 603243",
+    "work email": "richard.jones@acquia.com",
+    "my name": "Rich Jones",
     "lock screen": Key("cmd-ctrl-q"),
     "el bracket": "(",
     "ah bracket": ")",
@@ -35,4 +37,6 @@ ctx.keymap({
     "dock sal": "docksal ",
     "heya": "Hey",
     "drupal": "drupal",
+    "insert sick": "!sig",
+    "bastian": "bastion",
 })

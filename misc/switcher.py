@@ -58,6 +58,7 @@ ctx.keymap({
     "oh cal": lambda x: switch_app(x, "Calendar"),
     "oh notes": lambda x: switch_app(x, "Evernote"),
     "oh duck": lambda x: switch_app(x, "Cyberduck"),
+    "oh zoom": lambda x: switch_app(x, "zoom.us"),
 })
 
 def update_lists():

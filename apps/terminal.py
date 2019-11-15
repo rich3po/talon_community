@@ -50,7 +50,7 @@ keymap = {
     # some habits die hard
     "troll char": Key("ctrl-c"),
     "reverse": Key("ctrl-r"),
-    "cd": ["cd ; ll", Key("left"), Key("left"), Key("left"), Key("left")],
+    "cd": ["cd ; ls -la", Key("left"), Key("left"), Key("left"), Key("left"), Key("left"), Key("left"), Key("left"), Key("left")],
     "cd wild": [
         "cd **; ls",
         Key("left"),
@@ -68,7 +68,7 @@ keymap = {
         Key("left"),
         text,
     ],
-    "(ls | run ellis | run alice)": "ll\n",
+    "(ls | run ellis | run alice)": "ls -la\n",
     # "(la | run la)": "ls -la\n",
     "durrup": "cd ..; ls\n",
     "go back": "cd -\n",
@@ -231,11 +231,13 @@ keymap = {
     "brew": "brew ",
     "brew casque": "brew cask ",
     "finn": "fin ",
-    "drush": "fin drush ",
+    "drush": "drush ",
     "see see": "fin drush cc all",
     "up db": "fin drush updb -y",
     "run composer": "fin composer ",
     "run tick": "tig\n",
+    "art": "aht @",
+    "art find": "aht app:find ",
 }
 
 for action in ('get', 'delete', 'describe'):
