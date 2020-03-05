@@ -133,6 +133,7 @@ mapping = {
     "et cetera": "etc",
     "cash": "cache",
     "cashing": "caching",
+    "cashed": "cached",
     "sheikh": "shake",
     "you eighty": "UAT",
     "dup": "up",
@@ -149,6 +150,10 @@ mapping = {
     "artefact": "artifact",
     "webb": "web",
     "deque": "deck",
+    "consul": "console",
+    "disc": "disk",
+    "mem cache": "memcache",
+    "e-mailed": "emailed",
 }
 mappings = collections.defaultdict(dict)
 for k, v in mapping.items():

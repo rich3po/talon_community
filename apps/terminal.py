@@ -238,6 +238,7 @@ keymap = {
     "run tick": "tig\n",
     "art": "aht @",
     "art find": "aht app:find ",
+    "art server": "aht server --stages=ace ",
 }
 
 for action in ('get', 'delete', 'describe'):

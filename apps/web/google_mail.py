@@ -19,7 +19,7 @@ ctx.keymap(
         "older": Key("j"),
         "compose": Key("c"),
         "mark unread": Key("shift-u"),
-        "end": Key("cmd-right"),
-        "start": Key("cmd-left"),
+        # "end": Key("cmd-right"),
+        # "start": Key("cmd-left"),
     }
 )
