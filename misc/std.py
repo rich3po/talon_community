@@ -218,7 +218,7 @@ ctx.keymap(
         "state past": "pass",
         "plus": "+",
         "arrow": "->",
-        "call": "()",
+        # "call": "()",
         "indirect": "&",
         "dereference": "*",
         "(op equals | assign | equeft)": " = ",
