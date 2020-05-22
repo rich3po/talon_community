@@ -36,7 +36,7 @@ ctx.keymap({
     "symphony": "symfony ",
     "dock sal": "docksal ",
     "heya": "Hey",
-    "drupal": "drupal",
+    # "drupal": "drupal",
     "insert sick": "!sig",
     "bastian": "bastion",
 })

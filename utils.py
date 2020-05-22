@@ -154,6 +154,7 @@ mapping = {
     "disc": "disk",
     "mem cache": "memcache",
     "e-mailed": "emailed",
+    "cf": "cloudflare",
 }
 mappings = collections.defaultdict(dict)
 for k, v in mapping.items():

@@ -91,8 +91,8 @@ keymap = {
     "(click | chiff)": delayed_click,
     "(dubclick | duke)": delayed_dubclick,
     "(tripclick | triplick)": delayed_tripclick,
-    "drag": mouse_drag,
-    "release": mouse_release,
+    #"drag": mouse_drag,
+    #"release": mouse_release,
     # jsc added
     "(shift click | shicks)": shift_click,
     "(command click | chom lick)": command_click,
